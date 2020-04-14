@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IoT Web Client</title>
+    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <section class="text-center">
+            <h1 class="display-4">Calendar</h1>
+            <p class="lead">Today</p>
+        </section>
+        <section>
+            <div class="card-deck">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Date: <span id="date"></span></p>
+                        <p class="card-text">Season: <span id="season"></span></p>
+                        <p class="card-text">Season week: <span id="season_week"></span></p>
+                        <p class="card-text">Weekday: <span id="weekday"></span></p>
+                        <p class="card-text">Celebrations: </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <th>Title</th>
+                                <th>Colour</th>
+                                <th>Rank</th>
+                                <th>Rank number</th>
+                            </thead>
+                            <tbody id="celebrations"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/application.js"></script>
+</body>
+
+</html>
